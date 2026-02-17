@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vivek Rana | Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+    color:#333;
+    line-height:1.6;
+}
+
+header{
+    background:#1e2a38;
+    padding:20px 0;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav{
+    max-width:1100px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 20px;
+}
+
+nav h1{
+    color:white;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+}
+
+nav a:hover{
+    color:#00bcd4;
+}
+
+section{
+    padding:80px 20px;
+    max-width:1100px;
+    margin:auto;
+}
+
+.hero{
+    text-align:center;
+    background:linear-gradient(to right,#1e2a38,#324a5f);
+    color:white;
+    border-radius:10px;
+    padding:100px 20px;
+    margin-top:40px;
+}
+
+.hero h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:#00bcd4;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+}
+
+h2{
+    margin-bottom:30px;
+    text-align:center;
+    color:#1e2a38;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.resume-section{
+    margin-bottom:30px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:10px;
+}
+
+form{
+    max-width:500px;
+    margin:auto;
+}
+
+input, textarea{
+    width:100%;
+    padding:10px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    padding:12px;
+    background:#00bcd4;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0097a7;
+}
+
+footer{
+    background:#1e2a38;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+@media(max-width:768px){
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+    .hero h2{
+        font-size:28px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<h1>Vivek Rana</h1>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#resume">Resume</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#art">Art</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<section id="home">
+<div class="hero">
+<h2>Warehouse Professional | BIS Student | Artist</h2>
+<p>I combine real-world warehouse experience, academic knowledge in Business Information Systems, and a strong passion for creativity through art.</p>
+<a href="#contact" class="btn">Get In Touch</a>
+</div>
+</section>
+
+<section id="about">
+<h2>About Me</h2>
+<p>I currently work in a warehouse where I have developed strong teamwork, time management, and operational efficiency skills. Working in a fast-paced environment has taught me discipline and responsibility.</p>
+<br>
+<p>I am studying Bachelor of Business Information Systems, where I learn how technology supports business operations and decision-making. My goal is to become a Business Analyst and help organisations improve their processes.</p>
+<br>
+<p>Outside work and study, art is my passion. It allows me to think creatively and balance analytical thinking with imagination.</p>
+</section>
+
+<section id="resume">
+<h2>Resume</h2>
+
+<div class="resume-section">
+<h3>Education</h3>
+<p>Bachelor of Business Information Systems (Current)</p>
+</div>
+
+<div class="resume-section">
+<h3>Work Experience</h3>
+<p>Warehouse Associate – Inventory management, safety compliance, teamwork, and meeting productivity targets.</p>
+</div>
+
+<div class="resume-section">
+<h3>Skills</h3>
+<ul>
+<li>Business Process Analysis</li>
+<li>Teamwork & Communication</li>
+<li>Problem Solving</li>
+<li>HTML & CSS Basics</li>
+<li>Time Management</li>
+</ul>
+</div>
+
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+
+<div class="cards">
+<div class="card">
+<h4>Warehouse Process Improvement</h4>
+<p>Analysed warehouse workflow and suggested improvements to reduce handling time and increase efficiency.</p>
+</div>
+
+<div class="card">
+<h4>Personal Portfolio Website</h4>
+<p>Designed and developed a responsive website using HTML and CSS to showcase professional achievements.</p>
+</div>
+
+<div class="card">
+<h4>Business System Analysis Assignment</h4>
+<p>Studied system requirements and proposed solutions to improve operational effectiveness.</p>
+</div>
+</div>
+
+</section>
+
+<section id="art">
+<h2>Art Portfolio</h2>
+<p style="text-align:center; margin-bottom:30px;">Art allows me to express creativity and develop visual storytelling skills.</p>
+
+<div class="gallery">
+<img src="https://via.placeholder.com/300" alt="Artwork 1">
+<img src="https://via.placeholder.com/300" alt="Artwork 2">
+<img src="https://via.placeholder.com/300" alt="Artwork 3">
+</div>
+
+</section>
+
+<section id="contact">
+<h2>Contact Me</h2>
+
+<form>
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea rows="5" placeholder="Your Message" required></textarea>
+<button type="submit">Send Message</button>
+</form>
+
+</section>
+
+<footer>
+<p>© 2026 Vivek Rana | Portfolio Website</p>
+</footer>
+
+</body>
+</html>
